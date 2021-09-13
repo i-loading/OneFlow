@@ -197,7 +197,7 @@ nav {
   margin-top: 34px;
 }
 .collab_info {
-  padding: 60px 0 30px 100px;
+  padding: 60px 0 60px 100px;
 }
 .collab_info h3 {
   font-family: Roboto;
@@ -234,14 +234,12 @@ nav {
   border: 1px solid #346170;
   box-sizing: border-box;
   border-radius: 4px;
+  transition: all 0.2s ease-in-out;
 }
-
-
-.video-sec {
-  background: url(../img/video.png) no-repeat center bottom / cover;
-  height: 100%;
+.collab_info a:hover {
+  background: #346170;
+  color: #fff;
 }
-
 
 .advantages-sec {
   background: url(../img/bg-second.png) no-repeat center -600px / cover;
@@ -280,27 +278,6 @@ nav {
 }
 .advantage a {
   display: inline-block;
-}
-
-
-.demo-sec {
-  background: url(../img/bg-third.png) no-repeat center -130px / cover;
-  padding: 320px 0 350px;
-}
-.demo-sec h2 {
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 73px;
-  letter-spacing: 2px;
-  color: #F2DCE4;
-}
-.demo-sec p {
-  max-width: 470px;
-  font-size: 26px;
-  line-height: 32px;
-  letter-spacing: 0.5px;
-  color: #FFFFFF;
-  padding: 30px 0 25px;
 }
 
 
@@ -582,18 +559,11 @@ footer hr {
   .advantages-sec {
     background-position-y: -200px;
   }
-  .demo-sec {
-    padding: 250px 0px 300px 0px;
-    background-position-y: top;
-  }
 }
 @media screen and (max-width: 1540px){
   .advantages-sec {
     background-position-y: bottom;
     padding-bottom: 300px;
-  }
-  .video-sec {
-    display: none;
   }
 }
 @media screen and (max-width: 1400px){
@@ -605,9 +575,6 @@ footer hr {
   }
   .advantage {
     margin: 0 40px;
-  }
-  .demo-sec {
-    padding-left: 40px;
   }
   footer .container {
     padding: 0 30px;
@@ -715,12 +682,6 @@ footer hr {
   }
 }
 @media screen and (max-width: 720px){
-  .demo-sec {
-    text-align: center;
-  }
-  .demo-sec p {
-    max-width: 100%;
-  }
   .collab .menu {
     flex-wrap: wrap;
     justify-content: center;
@@ -748,12 +709,7 @@ footer hr {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  }
-  .demo-sec {
-    padding-left: 0;
-  }
-  .demo-sec h2 {
-    font-size: 50px;
+    text-align: center;
   }
   .main_news {
     background-image: none;
@@ -829,8 +785,6 @@ footer hr {
   .secondary_news-three h5 {
     padding: 30px 20px;
   }
-}
-@media screen and (max-width: 380px){
   .header-right ul {
     flex-direction: column;
   }
@@ -841,6 +795,8 @@ footer hr {
   .header-right ul li:nth-child(2) {
     padding-right: 0;
   }
+}
+@media screen and (max-width: 380px){
   .container_wonder {
     padding-top: 70px;
     text-align: center;
